@@ -486,26 +486,77 @@ nav {
 #todo-section {
   height: 100vh;
   display: flex;
-  align-items: flex-start;
-  /* justify-content: center; */
-  margin-left: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 7rem;
 
   color: #ddd;
   font-family: "brice-semibold", "GmarketSansMedium";
+}
+#todo-title {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* wrap */
+  flex-wrap: wrap;
+  align-content: center;
+
+  /* flex-direction, flex-wrap 줄임 */
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+#todo-list div {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  flex-basis: 300px;
+  height: 150px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+
+}
+
+#todo-title a {
+  color: #ddd; 
+}
+#todo-list a {
+  color: #ddd;
+}
+
+#todo-list div {
+  cursor: pointer;
+}
+#todo-list div:hover {
+  background-color: #efdc05;
+}
+
+#todo-list div:hover a{
+  background-color: #efdc05;
+  color: #181818;
 }
 
 /* #todo-list {
   margin-top: 2rem;
 } */
 
-#todo-list li {
+/* #todo-list li {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1.7rem;
 }
 
-#todo-list li a {
+#todo-list a {
   color: #ddd;
 }
 
@@ -526,7 +577,7 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-}
+} */
 /* todo section end */
 
 #contact {

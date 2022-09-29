@@ -239,7 +239,7 @@ td:hover {
 }
 
 /* confetti button */
-#confetti {
+#step-three #confetti {
   color:rgb(28, 31, 30);
   margin-top: 2rem;
   position: absolute;
@@ -410,4 +410,78 @@ td:hover {
   position: absolute;
   top: -10px;
   left: 30px;
+}
+
+/* apply.html */
+
+.toggle-desc {
+  display: none;
+}
+
+#apply-main {
+  padding-top: 120px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+#apply-main input[type="checkbox"] {
+  display: none;
+}
+
+#apply-main label {
+  display: block;
+}
+
+#apply-main input:checked + label {
+  background-color: #ddd;
+  color: #181818;
+}
+
+.apply-desc {
+  margin: 2rem 0;
+}
+
+.apply-item {
+  margin: 1rem 0;
+}
+
+
+.toggle-desc li {
+  background-color: #ddd;
+  color: #181818;
+  padding-left: 2.5rem;
+
+}
+
+.toggle-desc a {
+  color: #181818;
+}
+
+.toggle-desc a:hover {
+  background-color: #efdc05;
+}
+
+.toggle-btn {
+  padding-left: 1rem;
+}
+
+.toggle-btn:hover {
+  background-color: #ddd;
+  color: #181818;
+}
+
+#apply-main #confetti {
+  margin: 2.5rem 0;  
+}
+
+mark {
+  background-color: #efdc05;
+  color: #181818;
 }

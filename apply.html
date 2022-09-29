@@ -6,27 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./sub.css" />
-  <!-- 슬라이더 start -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.slider').bxSlider({
-        auto: true,
-        slideWidth: 500,
-        preloadImages: 'all',
-        controls: false
-      });
-    });
-  </script>
-  <!-- 슬라이더 end -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
   <!-- 이메일 예시 보기 start -->
   <script>
     $(function () {
-      $(".btn-email").click(() => {
-        $(".email-example").slideToggle(500);
+      $(".toggle-btn").click(function () {
+        $(this).next().slideToggle(500);
       });
 
     });
@@ -48,136 +34,103 @@
     </ul>
   </nav>
 
-  <section id="step-one">
-    <div class="flex-row">
-      <div>
-        <div class="title">Step 1. 학교 List Up</div>
-        <!-- <button id="confetti">button</button> -->
-        <div>
-          방문학생으로 가고 싶은 대학교를 찾아봅시다! <br>평소 관심 있었던 대학교, 전공별로 유명한 대학교, 전통이 있는 대학교, 유명한 교수가 있는 대학교 등 다양한 기준으로 많이 찾아보세요.<br>
-          독일은 한국과 달리 대학이 평준화되어있기 때문에, 학교 순위에 연연하기보다는 내가 원하는 학과에 유명한 교수가 있는지, 그 학과에 얼마나 오랜 전통이 있는지를 더 중요하게 생각해야 한다고
-          해요!<br>
-          아, 그리고 내가 가고 싶은 지역이 동독인지 서독인지, 소도시인지 대도시인지도 함께 고려해보면 좋아요!
+  <div id="apply-main">
+    <div>
+      <div class="title">준비해야 할 서류</div>
+      <div class="apply-item">
+        <div class="apply-desc">
+          학교마다 필수로 제출해야 하는 서류는 다를 수 있지만, 이 5개의 서류는 대부분의 학교에 공통으로 제출해요.
+        </div>
+        <input type="checkbox" id="learning-agreement">
+        <label class="toggle-btn" for="learning-agreement">
+          ▶️ Learning Agreement</label>
+        <div class="toggle-desc">
+          <ul>
+            <li><mark>Study Plan</mark> 이라고도 합니다.</li>
+            <li>학생의 인적사항과 방문 학교에서 들을 수업, 수학 언어 등을 작성합니다.</li>
+            <li>양식은 각 학교에서 제공하는 경우가 많아요!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="apply-item">
+        <input type="checkbox" id="language-certificate">
+        <label class="toggle-btn" for="language-certificate">
+          ▶️ Language Certificate</label>
+        <div class="toggle-desc">
+          <ul>
+            <li><mark>공인 어학 성적</mark></li>
+            <li>학교마다 인정 기준이 다르기 때문에 잘 확인한 후 제출해야 해요.</li>
+            <li>보통 영어 또는 독일어 성적을 제출합니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="apply-item">
+        <input type="checkbox" id="transcript-of-records">
+        <label class="toggle-btn" for="transcript-of-records">
+          ▶️ Transcript of Records</label>
+        <div class="toggle-desc">
+          <ul>
+            <li><mark>성적증명서</mark></li>
+            <li>본교에서 발급받을 수 있습니다. 되도록이면 영어로 발급받는 것이 좋겠죠? </li>
+          </ul>
         </div>
       </div>
 
-      <div class="slider">
-        <div><img src="/images/germany1.jpg" width="500px" height="300px"></div>
-        <div><img src="/images/germany2.jpg" width="500px" height="300px"></div>
-        <div><img src="/images/germany5.jpg" width="500px" height="300px"></div>
-        <div><img src="/images/germany8.jpg" width="500px" height="300px"></div>
-      </div>
-    </div>
-    <a href="#step-two">
-      <div class="arrow bounce"></div>
-    </a>
-  </section>
-
-  <section id="step-two">
-    <div class="flex-row">
-      <div>
-        <div class="title">Step 2. 방문학생 제도 찾기</div>
-        <div>
-          가고 싶은 대학들을 전부 나열해보았다면, 이제 각 대학교의 홈페이지에 가서 방문학생 제도가 있는지 찾아봐야겠죠? <br>
-          독일에서 방문 학생은 대부분 <mark>Free Mover, Non-Degree Student</mark>로 부르고 있으니, 이러한 이름의 제도가 있는지 찾아보세요!<br>
-          Free Mover 제도가 홈페이지에 명시된 학교들은 아래와 같아요. 이 목록에 없는 학교이더라도 혹시 Free Mover 제도를 운영하고 있을지 모르니, 꼭 학교에 직접 문의해서 비슷한 제도를
-          운영하는지 알아보기로 해요!
+      <div class="apply-item">
+        <input type="checkbox" id="letter-of-motivation">
+        <label class="toggle-btn" for="letter-of-motivation">
+          ▶️ Letter of Motivation </label> 
+        <div class="toggle-desc">
+          <ul>
+            <li><mark>자기소개서</mark></li>
+            <li>인적 사항, 자신의 학교와 전공에 대한 소개, 지원동기 등을 작성합니다.</li>
+            <li>양식은 따로 없으므로, 각자의 상황에 맞게 내용을 구성해 봅시다!</li>
+            <li>들어가면 좋은 내용
+         
+                <li> - 이름, 전공, 현재 다니는 대학 등 간단한 소개</li>
+                <li> - 방문학생에 지원하게 된 동기</li>
+                <li> - 학교를 선택한 이유</li>
+                <li> - 나의 장점</li>
+                <li> - 방문학생이 된다면 내가 기울일 노력 등</li>
+           
+            </li>
+          </ul>
         </div>
       </div>
-      <table>
-        <tr>
-          <th colspan="3">클릭하면 학교 홈페이지로 이동해요!</th>
-        </tr>
-        <tr>
-          <td>RWTH Aachen</td>
-          <td>KIT Karlsruche</td>
-          <td>Uni Stuttegart</td>
-        </tr>
-        <tr>
-          <td>TU Kaiserslautern</td>
-          <td>TU Dresden</td>
-          <td>Uni Heidelberg</td>
-        </tr>
-        <tr>
-          <td>TU Braunschweig</td>
-          <td>Uni Magdeburg</td>
-          <td>Uni Freiburg</td>
-        </tr>
-        <tr>
-          <td>Ruhr Uni Bochum</td>
-          <td>Brandenburg Tech Univ</td>
-          <td>Uni Hamburg</td>
-        </tr>
-        <tr>
-          <td>Uni Saarland</td>
-          <td>Frankfurt University</td>
-          <td>Uni Bremen</td>
-        </tr>
-        <tr>
-          <td>Uni DuisBurg-Essen</td>
-          <td>Uni Ulm</td>
-          <td>Uni Oldenburg</td>
-        </tr>
-      </table>
+
+      <div class="apply-item">
+        <input type="checkbox" id="cv">
+        <label class="toggle-btn" for="cv">
+          ▶️ CV (Curriculum Vita) </label> 
+        <div class="toggle-desc">
+          <ul>
+            <li><mark>경력 기술서</mark></li>
+            <li>학력, 아르바이트 경험, 활동내역, 어학능력, 전산능력 등을 작성합니다.</li>
+            <li>필수 서류는 아닌 경우가 많지만, 자신의 장점을 어필하기 위해 제출하면 좋은 서류입니다!</li>
+            <li>학교에서 제공해 주는 경우도 있지만, 그렇지 않은 경우 인터넷에서 CV양식을 찾아서 작성할 수 있어요.</li>
+            <li>방문학생 지원용 CV작성 사이트
+
+             
+                <li><a href="https://lebenslauf.com/">1. Lebenslauf</a></li>
+                <li><a href="https://europass.cedefop.europa.eu/editors/en/cv/compose/">2. Europass</a></li>
+
+           
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-    <a href="#step-three">
-      <div class="arrow bounce"></div>
-    </a>
-  </section>
 
-  <section id="step-three">
-
-    <div class="title">Step 3. 메일 보내 확인하기</div>
-
-    <div>홈페이지에 방문학생 지원 정보가 자세히 나와있지 않은 경우도 있어요. <br>그렇다면, 국제교류처에 직접 메일을 보내 문의해보세요! <br>
-      원하는 대학에 방문학생 제도가 있는지, 있다면 어떻게 지원해야 하는지 정확한 정보를 얻을 수 있어요.
-    </div>
-    <button class="btn btn-1 hover-filled-slide-down btn-email">
-      <span>이메일 예시 보기</span>
-    </button>
-    <div class="email-example">메일 제목: [International Department] Questions about FREE MOVER application<br>
-      받는 주소: 국제교류처 메일 주소 <br>
-      <hr>
-      Dear international department of 지원하고자 하는 대학 이름<br>
-      (만약 홈페이지에 NON-EU 학생 유학 관련 담당자가 제시되어 있다면 그쪽 메일 주소로)
-      <br>
-      Dear Mr/Ms 담당자 이름 <br>
-
-      Hello, <br><br>
-
-      My name is 자신 이름 and I am an undergraduate student currently majoring in 본 전공 이름 at 본교 이름. <br>
-
-      (본교 홈페이지에서 자신 전공 상세페이지[영문] 링크 첨부) <br>
-
-      ​
-
-      I plan to study 지원하고자 하는 전공 at 지원하고자 하는 대학 이름 as a free mover student next 지원하고자 하는 학기​, and I was hoping to seek
-      some information to materialize this plan. However, even though I searched the university website I was unable to
-      get enough guide for application. <br>
-
-      ​<br>
-
-      I wonder if you could provide me with some information regarding students who wish to study at 지원하고자 하는 대학 이름 as a
-      free mover. And I would also like to know if there are some accommodation(기숙사) and finance systems for free mover
-      students too. <br>
-
-      ​
-
-      Deepest thanks for your consideration. <br>
-
-      ​<br>
-
-      Sincerely, <br>
-      이름
-    </div>
     <!-- 툴팁 없는 버튼 -->
     <div class="btn-holder" id="confetti">
       <button class="btn btn-5 hover-border-11">
-        <span>방문교 선택 완료!</span>
+        <span>서류 준비 완료!</span>
       </button>
     </div>
 
-  </section>
+
+  </div>
 
   <script src="confetti.min.js"></script>
   <script>
