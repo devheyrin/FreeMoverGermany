@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "brice-semibold";
+  src: url(./src/Brice-SemiBold.otf);
+}
+@font-face {
+  font-family: "brice-le";
+  src: url(./src/Brice-LightExpanded.otf);
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  color: #ddd;
+  margin:0;padding: 0;
+}
+
+.content {
+  z-index: 1;
+}
+
+nav {
+  background-color: black;
+}
+
+nav h1 {
+  padding-left: 32px;
+  margin: 19.920px 0;
+}
+
+.title {
+  font-family: "brice-semibold", "GmarketSansMedium";
+  font-size: 3rem;
+}
+
+section {
+  height: 100vh;
+}
+
+#step-one {
+  padding-top: 90px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+#step-one .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#step-one div:first-child {
+  margin-right: 2rem;
+}
+
+#step-one div:last-child {
+  margin-top: 2rem;
+}
+
+#step-one a {
+  align-self: center;
+}
+
+#step-two {
+  padding-top: 90px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+#step-two .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#step-two div:first-child {
+  margin-right: 3.5rem;
+}
+
+#step-two div:last-child {
+  margin-top: 2rem;
+}
+
+#step-two a {
+  align-self: center;
+}
+
+#step-two mark {
+  color: black;
+}
+
+table {
+  border: white solid 1px;
+  box-shadow: 4px 4px 10px rgb(138, 125, 15);
+}
+
+th {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+td {
+  border: white solid 1px;
+  padding: 0.5rem;
+}
+
+td:hover {
+  background-color: rgb(224, 92, 83);
+}
+
+#step-three {
+  padding-top: 120px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  align-items: center;
+}
+
+#step-three div:nth-child(2) {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* 이메일 예시 버튼 */
+:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #ddd;
+  border: 1px solid rgb(28, 31, 30);
+  cursor: pointer;
+  min-width: 150px;
+}
+.btn span {
+  font-family: "GmarketSansMedium";
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+/*--- btn-1 ---*/
+.btn-1::before {
+  background-color: rgb(28, 31, 30);
+  border: 1px solid #ddd;
+  transition: 0.3s ease-out;
+}
+.btn-1 span {
+  color: rgb(255,255,255);
+
+  transition: 0.2s 0.1s;
+}
+.btn-1 span:hover {
+  color: rgb(28, 31, 30);
+  transition: 0.2s 0.1s;
+}
+
+/* 4. hover-filled-slide-right */
+.btn.hover-filled-slide-right::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.btn.hover-filled-slide-down::before {
+  bottom: 0; left: 0; right: 0; 
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-down:hover::before {
+  height: 0%;
+}
+
+.btn-email {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.email-example {
+  width: 80%;
+  background-color: #ddd;
+  border: 1px solid rgb(28, 31, 30);
+  color: black;
+  height: 200px;
+  margin-top: 0px;
+  overflow-y: scroll;
+  font-size: 1rem;
+  padding: 1rem;
+  display: none;
+}
+
+/* confetti button */
+#confetti {
+  color:rgb(28, 31, 30);
+  margin-top: 2rem;
+  position: absolute;
+  top: 2150px;
+}
+
+/*--- btn-5 ---*/
+.btn-5 span {
+  color: rgb(28, 31, 30);
+  border: 2px solid rgb(249, 211, 27);
+  transition: 0.2s;
+}
+.btn-5 span:hover {
+  background-color: rgb(245,245,245);
+}
+
+/* 21. hover-border-11 */
+.btn.hover-border-11::before,
+.btn.hover-border-11::after {
+  width: 100%; height: 2px;
+  background-color: rgb(54, 56, 55);
+  z-index: 2;
+  transition: 0.35s; 
+}
+.btn.hover-border-11::before {
+  top: 0; right: 0;
+}
+.btn.hover-border-11::after {
+  bottom: 0; left: 0;
+}
+.btn.hover-border-11:hover::before,
+.btn.hover-border-11:hover::after {
+  width: 0%;
+  transition: 0.2s 0.2s ease-out; 
+}
+
+.btn.hover-border-11 span::before,
+.btn.hover-border-11 span::after {
+  width: 2px; height: 100%;
+  background-color: rgb(54, 56, 55);
+  z-index: 2;
+  transition: 0.25s; 
+}
+.btn.hover-border-11 span::before {
+  bottom: 0; right: -2px;
+}
+.btn.hover-border-11 span::after {
+  top: 0; left: -2px;
+}
+.btn.hover-border-11 span:hover::before,
+.btn.hover-border-11 span:hover::after {
+  height: 0%;
+}
+
+/* 툴팁 */
+.tooltip-container {
+  margin: 60px auto;
+  padding-top: 0px;
+  position: relative;
+  width: 160px;
+}
+.tooltip-container .tooltip-btn {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  background: #181818;
+  font-size: 22px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: background 0.3s ease-in;
+}
+.tooltip-container .tooltip-btn:hover {
+  background: #000000;
+}
+.tooltip-container .tooltip-btn.tooltip-toggle:hover ~ .tooltip-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 400px;
+  width: 200px;
+  min-height: 70px;
+  padding: 0px 20px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 145%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  overflow: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  .tooltip-container .tooltip-btn.tooltip-toggle:hover ~ .tooltip-content {
+    left: 0;
+  }
+}
+.tooltip-container .tooltip-btn.tooltip-toggle:hover ~ .tooltip-content:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+}
+.tooltip-container .tooltip-content,
+.tooltip-container .tooltip-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in;
+}
+.tooltip-container #tooltip-toggle {
+  display: none;
+}
+.tooltip-container #tooltip-toggle.active ~ .tooltip-backdrop, .tooltip-container #tooltip-toggle:checked ~ .tooltip-backdrop {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.tooltip-container #tooltip-toggle.active ~ .tooltip-content, .tooltip-container #tooltip-toggle:checked ~ .tooltip-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 400px;
+  width: 200px;
+  min-height: 70px;
+  padding: 0px 20px;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 145%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  visibility: visible;
+  overflow: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  .tooltip-container #tooltip-toggle.active ~ .tooltip-content, .tooltip-container #tooltip-toggle:checked ~ .tooltip-content {
+    left: 0;
+  }
+}
+.tooltip-container #tooltip-toggle.active ~ .tooltip-content:before, .tooltip-container #tooltip-toggle:checked ~ .tooltip-content:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+}
