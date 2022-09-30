@@ -500,6 +500,8 @@ mark {
   margin-right: 6rem;
 }
 .tip1-container {
+  margin-top: 2rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -570,4 +572,76 @@ mark {
 .tip1-container .tip1-item .item-desc>div:first-child {
   font-size: 1.5rem;
   padding-bottom: 1rem;
+}
+
+/* form.html */
+#form-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  font-family: 'GmarketSansMedium';
+  
+}
+
+#form-section .form-container {
+  padding-top: 100px;
+  margin-left: 5rem;
+}
+
+#form-section .form-container .form-title {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.form-desc {
+  margin: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#emailForm input {
+  width: 550px;
+  height: 50px;
+  margin: 0.7rem;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: 'GmarketSansMedium';
+  color: #181818;
+}
+
+#emailForm textarea {
+  margin: 0.7rem;
+  width: 550px;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: 'GmarketSansMedium';
+  color: #181818;
+}
+
+#btnSubmit {
+  margin-left: 13rem;
+  color: #181818;
+  width: 150px;
+  height: 40px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: 'GmarketSansMedium';
+}
+
+.thankyou_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  text-align: center;
+  line-height: 2;
 }
