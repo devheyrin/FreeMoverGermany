@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./sub.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+  <!-- 이메일 예시 보기 start -->
+  <script>
+    $(function () {
+      $(".toggle-btn").click(function () {
+        $(this).next().slideToggle(500);
+      });
+
+    });
+  </script>
+
+
+  <title>더 많은 꿀팁</title>
+</head>
+
+<body>
+  <!--   navigation start   -->
+  <nav class="fixed-top" id="navbar">
+    <h1><a href="/"><img src="./images/logo.png" /></a></h1>
+    <ul>
+      <li><a href="/#welcome-section">Welcome</a></li>
+      <li><a href="/#detail-section">Details</a></li>
+      <li><a href="/#projects">Univ</a></li>
+      <li><a href="/#todo-section">TO-DO List</a></li>
+    </ul>
+  </nav>
+
+  <section id="tips-one">
+    <div>
+      <div class="title">Tip 1. 독일에서 잘 먹고 잘 살기</div>
+      <!-- <button id="confetti">button</button> -->
+      <div class="tip1-container">
+        <div class="tip1-item">
+          <!-- <img src="./images/rewe.png"> -->
+          <div class="item-desc">
+            <div>REWE | 레베</div>
+
+            독일 어디에나 있는 슈퍼마켓 체인점.<br />
+            식료품, 생필품 등 필요한 것은 거의 다 구매할 수 있어요! <br />
+            자체 브랜드로 저렴한 가격대의 Ja!(야!), 유기농 브랜드인 REWE Bio(레베 비오) 등을 보유하고 있어요.
+          </div>
+        </div>
+        <div class="tip1-item">
+          <!-- <img src="./images/aldi.png"> -->
+          <div class="item-desc">
+            <div>ALDI | 알디</div>
+            <div>
+              품질이 나쁘지 않으면서 저렴한 상품을 구매할 수 있는 슈퍼마켓 체인점. <br />
+              단, 한 품목에 한 종류의 상품만 판매하는 경우가 대부분이어서 다양한 상품을 구하기는 어려워요.
+            </div>
+          </div>
+        </div>
+        <div class="tip1-item">
+          <!-- <img src="./images/DM.png"> -->
+          <div class="item-desc">
+            <div>DM | 데엠</div>
+            <div>
+              유럽을 대표하는 드럭스토어.<br /> 화장품, 약 등을 구매할 수 있어요!<br />
+              PB브랜드인 Balea(발레아) 제품들의 가성비가 뛰어난 것으로 유명해요. <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#step-two">
+      <div class="arrow bounce"></div>
+    </a>
+
+  </section>
+</body>
+<script type="module" src="confetti.js"></script>
+
+</html>

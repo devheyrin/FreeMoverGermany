@@ -485,3 +485,89 @@ mark {
   background-color: #efdc05;
   color: #181818;
 }
+
+/* tips.html */
+#tips-one {
+  padding-top: 90px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.tip1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* wrap */
+  flex-wrap: wrap;
+  align-content: center;
+
+  /* flex-direction, flex-wrap 줄임 */
+  flex-flow: row wrap;
+  width: 100%;
+}
+.tip1-container .tip1-item {
+  border: 1px solid #000000;
+  border-radius: 70px;
+  flex-basis: 350px;
+  height: 350px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.tip1-container .tip1-item{
+  background-position: center;
+}
+
+.tip1-container .tip1-item:hover  .item-desc{
+  display: flex;
+}
+
+.tip1-container .tip1-item:nth-child(1) {
+  background-image: url("./images/rewe.png");
+  background-size: 300px;
+}
+
+.tip1-container .tip1-item:nth-child(2) {
+  background-image: url("./images/aldi.png");
+  background-size: 650px;
+}
+
+.tip1-container .tip1-item:nth-child(3) {
+  background-image: url("./images/DM.png");
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.tip1-container .tip1-item .item-desc {
+  background-color: #000000a4;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: none;
+}
+
+#tips-one a {
+  align-self: center;
+}
+
+.tip1-container .tip1-item .item-desc>div:first-child {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}

@@ -545,39 +545,6 @@ nav {
   background-color: #efdc05;
   color: #181818;
 }
-
-/* #todo-list {
-  margin-top: 2rem;
-} */
-
-/* #todo-list li {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 1.7rem;
-}
-
-#todo-list a {
-  color: #ddd;
-}
-
-#todo-title {
-  font-size: 3rem;
-}
-
-.todo-detail {
-  border: 1px solid #ddd;
-  flex-basis: 450px;
-  flex-grow: 1;
-  height: 600px;
-  margin-left: 15rem;
-  margin-right: 4rem;
-  margin-top: 2rem;
-  border-radius: 20px;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-} */
 /* todo section end */
 
 #contact {
