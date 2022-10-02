@@ -239,11 +239,14 @@ td:hover {
 }
 
 /* confetti button */
+#step-three {
+  position: relative;
+}
 #step-three #confetti {
   color:rgb(28, 31, 30);
   margin-top: 2rem;
   position: absolute;
-  top: 2150px;
+  bottom: 50px;
 }
 
 /*--- btn-5 ---*/
@@ -457,7 +460,11 @@ td:hover {
   background-color: #ddd;
   color: #181818;
   padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 
+.toggle-desc li:last-child {
+  padding-bottom: 1rem;
 }
 
 .toggle-desc a {
@@ -478,13 +485,26 @@ td:hover {
 }
 
 #apply-main #confetti {
-  margin: 2.5rem 0;  
+  
 }
 
 mark {
   background-color: #efdc05;
   color: #181818;
 }
+
+.btn-holder {
+  display: inline-block;
+}
+
+.bnt-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 /* tips.html */
 #tips-one {

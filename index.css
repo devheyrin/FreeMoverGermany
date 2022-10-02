@@ -514,7 +514,7 @@ nav {
   width: 100%;
 }
 
-#todo-list div {
+#todo-list a {
   border: 1px solid #ddd;
   border-radius: 30px;
   flex-basis: 300px;
@@ -537,11 +537,11 @@ nav {
 #todo-list div {
   cursor: pointer;
 }
-#todo-list div:hover {
+#todo-list a:hover {
   background-color: #efdc05;
 }
 
-#todo-list div:hover a{
+#todo-list a:hover div{
   background-color: #efdc05;
   color: #181818;
 }
