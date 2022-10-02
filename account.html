@@ -7,18 +7,8 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./sub.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-
-  <!-- 이메일 예시 보기 start -->
-  <script>
-    $(function () {
-      $(".toggle-btn").click(function () {
-        $(this).next().slideToggle(500);
-      });
-
-    });
-  </script>
-
-
+  <script src="./main.js"></script>
+  <script src="confetti.min.js"></script>
   <title>보험 가입/계좌 개설</title>
 </head>
 
@@ -33,6 +23,7 @@
       <li><a href="/#todo-section">TO-DO List</a></li>
     </ul>
   </nav>
+  <!--   navigation start   -->
 
   <div id="apply-main">
     <div>
@@ -109,12 +100,8 @@
             <li>필수 서류는 아닌 경우가 많지만, 자신의 장점을 어필하기 위해 제출하면 좋은 서류입니다!</li>
             <li>학교에서 제공해 주는 경우도 있지만, 그렇지 않은 경우 인터넷에서 CV양식을 찾아서 작성할 수 있어요.</li>
             <li>👉 방문학생 지원용 CV작성 사이트
-
-
             <li><a href="https://lebenslauf.com/">1. Lebenslauf</a></li>
             <li><a href="https://europass.cedefop.europa.eu/editors/en/cv/compose/">2. Europass</a></li>
-
-
             </li>
           </ul>
         </div>
@@ -142,26 +129,10 @@
         $("#confetti").click(() => {
           setTimeout(()=>{
             window.location.href = "visa.html";
-
-          }, 1000);
+          }, 500);
         });
       });
-
     </script>
-
-
   </div>
-
-  <script src="confetti.min.js"></script>
-  <script>
-    let confetti = new Confetti("confetti");
-    confetti.setCount(50);
-    confetti.setPower(50);
-    confetti.setSize(3);
-    confetti.setFade(true);
-    confetti.destroyTarget(false);
-  </script>
 </body>
-<script type="module" src="confetti.js"></script>
-
 </html>

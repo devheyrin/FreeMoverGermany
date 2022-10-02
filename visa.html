@@ -7,18 +7,8 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./sub.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-
-  <!-- 이메일 예시 보기 start -->
-  <script>
-    $(function () {
-      $(".toggle-btn").click(function () {
-        $(this).next().slideToggle(500);
-      });
-
-    });
-  </script>
-
-
+  <script src="./main.js"></script>
+  <script src="confetti.min.js"></script>
   <title>비자 발급</title>
 </head>
 
@@ -33,7 +23,8 @@
       <li><a href="/#todo-section">TO-DO List</a></li>
     </ul>
   </nav>
-
+  <!--   navigation end   -->
+  
   <div id="apply-main">
     <div>
       <div class="title">비자 발급</div>
@@ -142,26 +133,11 @@
         $("#confetti").click(() => {
           setTimeout(()=>{
             window.location.href = "tips.html";
-
           }, 500);
         });
       });
-
     </script>
-
-
   </div>
-
-  <script src="confetti.min.js"></script>
-  <script>
-    let confetti = new Confetti("confetti");
-    confetti.setCount(50);
-    confetti.setPower(50);
-    confetti.setSize(3);
-    confetti.setFade(true);
-    confetti.destroyTarget(false);
-  </script>
 </body>
-<script type="module" src="confetti.js"></script>
 
 </html>

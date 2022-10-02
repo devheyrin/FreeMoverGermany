@@ -7,19 +7,9 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./sub.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-
-  <!-- 이메일 예시 보기 start -->
-  <script>
-    $(function () {
-      $(".toggle-btn").click(function () {
-        $(this).next().slideToggle(500);
-      });
-
-    });
-  </script>
-
-
-  <title>더 많은 꿀팁</title>
+  <script src="./main.js"></script>
+  <script src="confetti.min.js"></script>
+  <title>독일 생활 꿀팁</title>
 </head>
 
 <body>
@@ -33,14 +23,13 @@
       <li><a href="/#todo-section">TO-DO List</a></li>
     </ul>
   </nav>
+  <!--   navigation end   -->
 
   <section id="tips-one">
     <div>
       <div class="title">Tip 1. 독일에서 잘 먹고 잘 살기</div>
-      <!-- <button id="confetti">button</button> -->
       <div class="tip1-container">
         <div class="tip1-item">
-          <!-- <img src="./images/rewe.png"> -->
           <div class="item-desc">
             <div>REWE | 레베</div>
             <div>
@@ -51,7 +40,6 @@
           </div>
         </div>
         <div class="tip1-item">
-          <!-- <img src="./images/aldi.png"> -->
           <div class="item-desc">
             <div>ALDI | 알디</div>
             <div>
@@ -61,7 +49,6 @@
           </div>
         </div>
         <div class="tip1-item">
-          <!-- <img src="./images/DM.png"> -->
           <div class="item-desc">
             <div>DM | 데엠</div>
             <div>
@@ -75,9 +62,7 @@
     <a href="#step-two">
       <div class="arrow bounce"></div>
     </a>
-
   </section>
 </body>
-<script type="module" src="confetti.js"></script>
 
 </html>

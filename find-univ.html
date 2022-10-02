@@ -6,31 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./sub.css" />
-  <!-- 슬라이더 start -->
+  <!-- 슬라이더 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.slider').bxSlider({
-        auto: true,
-        slideWidth: 500,
-        controls: false
-      });
-    });
-  </script>
-  <!-- 슬라이더 end -->
-
-  <!-- 이메일 예시 보기 start -->
-  <script>
-    $(function () {
-      $(".btn-email").click(() => {
-        $(".email-example").slideToggle(500);
-      });
-
-    });
-  </script>
-
+  <script src="./main.js"></script>
+  <script src="confetti.min.js"></script>
 
   <title>학교 선택</title>
 </head>
@@ -46,12 +27,13 @@
       <li><a href="/#todo-section">TO-DO List</a></li>
     </ul>
   </nav>
+  <!--   navigation end   -->
 
+  <!-- step 1  start -->
   <section id="step-one">
     <div class="flex-row">
       <div>
         <div class="title">Step 1. 학교 List Up</div>
-        <!-- <button id="confetti">button</button> -->
         <div>
           방문학생으로 가고 싶은 대학교를 찾아봅시다! <br>평소 관심 있었던 대학교, 전공별로 유명한 대학교, 전통이 있는 대학교, 유명한 교수가 있는 대학교 등 다양한 기준으로 많이 찾아보세요.<br>
           독일은 한국과 달리 대학이 평준화되어있기 때문에, 학교 순위에 연연하기보다는 내가 원하는 학과에 유명한 교수가 있는지, 그 학과에 얼마나 오랜 전통이 있는지를 더 중요하게 생각해야 한다고
@@ -71,7 +53,9 @@
       <div class="arrow bounce"></div>
     </a>
   </section>
+  <!-- step 1  end -->
 
+  <!-- step 2  start -->
   <section id="step-two">
     <div class="flex-row">
       <div>
@@ -123,7 +107,9 @@
       <div class="arrow bounce"></div>
     </a>
   </section>
+  <!-- step 2  end -->
 
+  <!-- step 3  start -->
   <section id="step-three">
 
     <div class="title">Step 3. 메일 보내 확인하기</div>
@@ -135,38 +121,28 @@
       <span>이메일 예시 보기</span>
     </button>
     <div class="email-example">메일 제목: [International Department] Questions about FREE MOVER application<br>
-      받는 주소: 국제교류처 메일 주소 <br>
+      받는 주소: 국제교류처 메일 주소 <br/>
       <hr>
-      Dear international department of 지원하고자 하는 대학 이름<br>
+      Dear international department of 지원하고자 하는 대학 이름<br/>
       (만약 홈페이지에 NON-EU 학생 유학 관련 담당자가 제시되어 있다면 그쪽 메일 주소로)
-      <br>
-      Dear Mr/Ms 담당자 이름 <br>
+      <br/>
+      Dear Mr/Ms 담당자 이름 <br/>
 
-      Hello, <br><br>
+      Hello, <br/><br/>
 
       My name is 자신 이름 and I am an undergraduate student currently majoring in 본 전공 이름 at 본교 이름. <br>
 
-      (본교 홈페이지에서 자신 전공 상세페이지[영문] 링크 첨부) <br>
-
-      ​
+      (본교 홈페이지에서 자신 전공 상세페이지[영문] 링크 첨부) <br/>
 
       I plan to study 지원하고자 하는 전공 at 지원하고자 하는 대학 이름 as a free mover student next 지원하고자 하는 학기​, and I was hoping to seek
       some information to materialize this plan. However, even though I searched the university website I was unable to
-      get enough guide for application. <br>
-
-      ​<br>
+      get enough guide for application. <br/><br/>
 
       I wonder if you could provide me with some information regarding students who wish to study at 지원하고자 하는 대학 이름 as a
       free mover. And I would also like to know if there are some accommodation(기숙사) and finance systems for free mover
-      students too. <br>
-
-      ​
-
-      Deepest thanks for your consideration. <br>
-
-      ​<br>
-
-      Sincerely, <br>
+      students too. <br/>
+      Deepest thanks for your consideration. <br/><br/>
+      Sincerely, <br/>
       이름
     </div>
     <!-- 툴팁 없는 버튼 -->
@@ -178,27 +154,13 @@
     <script>
       $(function () {
         $("#confetti").click(() => {
-          setTimeout(()=>{
+          setTimeout(() => {
             window.location.href = "apply.html";
-
-          }, 1000);
+          }, 500);
         });
       });
-
     </script>
-
   </section>
-
-  <script src="confetti.min.js"></script>
-  <script>
-    let confetti = new Confetti("confetti");
-    confetti.setCount(50);
-    confetti.setPower(50);
-    confetti.setSize(3);
-    confetti.setFade(true);
-    confetti.destroyTarget(false);
-  </script>
+  <!-- step 3 end -->
 </body>
-<script type="module" src="confetti.js"></script>
-
 </html>
