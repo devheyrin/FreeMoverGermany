@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/sub.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="../main.js"></script>
+  <script src="../confetti.min.js"></script>
+  <title>계좌 개설</title>
+</head>
+
+<body>
+  <!--   navigation start   -->
+  <nav class="fixed-top" id="navbar">
+    <h1><a href="../index.html"><img src="../images/logo.png" /></a></h1>
+    <ul>
+      <li><a href="../index.html#welcom-section">Welcome</a></li>
+      <li><a href="../index.html#detail-section">Details</a></li>
+      <li><a href="../index.html#universities">Univ</a></li>
+      <li><a href="../index.html#todo-section">TO-DO List</a></li>
+    </ul>
+  </nav>
+  <!--   navigation start   -->
+
+  <div id="apply-main">
+    <div>
+      <div class="title">독일 은행들</div>
+      <div class="apply-item">
+        <div class="apply-desc">
+          독일에서 3개월 이상 거주하려면 비자를 발급받아야 하는데, 비자를 받으려면 독일 은행 계좌가 필요해요. <br>
+          독일의 다양한 은행 중, 유학생들이 많이 이용하는 은행은 다음과 같아요!
+        </div>
+        <input type="checkbox" id="learning-agreement">
+        <label class="toggle-btn" for="learning-agreement">
+          ▶️ Sparkasse | 슈파카세 </label>
+        <div class="toggle-desc">
+          <ul>
+            <li>독일 유학생들이 많이 이용하는 은행 중 하나!</li>
+            <li>지점이 많고, ATM기기도 많아요. </li>
+            <li>모바일뱅킹이 잘 되어 있어 송금할 때 편리해요!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="apply-item">
+        <input type="checkbox" id="transcript-of-records">
+        <label class="toggle-btn" for="transcript-of-records">
+          ▶️ Commerzbank | 코메르츠 방크</label>
+        <div class="toggle-desc">
+          <ul>
+            <li>독일에 1000여 개의 지점과 9000여개의 ATM기기가 있어요.  </li>
+            <li>ATM기기에서 현금 인출 시 수수료가 무료에요. </li>
+            <li>매달 입금액이 700유로 이상인 경우 계좌 유지비가 무료에요! </li>
+          </ul>
+        </div>
+      </div>
+      <div class="apply-item">
+        <input type="checkbox" id="language-certificate">
+        <label class="toggle-btn" for="language-certificate">
+          ▶️ N26</label>
+        <div class="toggle-desc">
+          <ul>
+            <li>독일의 카카오뱅크! 휴대폰 번호만 있으면 개설 가능해요.</li>
+            <li>어플에서 가입 후, 영상통화를 하면 카드가 집으로 도착해요.</li>
+            <li>하지만 보안 등의 문제가 있으니, 큰 돈을 맡길 때는 조심!</li>
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      
+    </div>
+
+    <div class="bnt-container">
+      <a href="./house.html">
+        <div class="btn-holder" class="prev-btn">
+          <button class="btn btn-5 hover-border-11">
+            <span>이전으로</span>
+          </button>
+        </div>
+      </a>
+      <!-- 툴팁 없는 버튼 -->
+      <div class="btn-holder" id="confetti">
+        <button class="btn btn-5 hover-border-11">
+          <span>개설 완료!</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $("#confetti").click(() => {
+          setTimeout(()=>{
+            window.location.href = "visa.html";
+          }, 500);
+        });
+      });
+    </script>
+  </div>
+</body>
+</html>

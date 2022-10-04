@@ -1,10 +1,10 @@
 @font-face {
   font-family: "brice-semibold";
-  src: url(./src/Brice-SemiBold.otf);
+  src: url(../src/Brice-SemiBold.otf);
 }
 @font-face {
   font-family: "brice-le";
-  src: url(./src/Brice-LightExpanded.otf);
+  src: url(../src/Brice-LightExpanded.otf);
 }
 
 @font-face {
@@ -69,11 +69,16 @@ section {
   flex-direction: row;
 }
 
-#step-one div:first-child {
+/* #step-one div:first-child {
+  margin-right: 2rem;
+} */
+
+.univ-desc {
+  margin-top: 2rem;
   margin-right: 2rem;
 }
 
-#step-one div:last-child {
+#step-one .arrow-btn{
   margin-top: 2rem;
 }
 
@@ -94,16 +99,19 @@ section {
   margin-right: 6rem;
 }
 
+#step-two .title {
+  margin-bottom: 2rem;
+}
+
+
 #step-two .flex-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-#step-two div:first-child {
-  margin-right: 3.5rem;
-}
 
-#step-two div:last-child {
+#step-two .arrow-btn {
   margin-top: 2rem;
 }
 
@@ -129,9 +137,17 @@ td {
   border: white solid 1px;
   padding: 0.5rem;
 }
+td a {
+  color: #ddd;
+}
 
-td:hover {
-  background-color: rgb(224, 92, 83);
+td:hover  {
+  background-color: #efdc05;
+  color: #000000;
+}
+
+td:hover a {
+  color: #181818;
 }
 
 #step-three {
@@ -499,6 +515,7 @@ mark {
   justify-content:space-between;
   margin-top: 1rem;
   margin-bottom: 1rem;
+
 }
 
 
@@ -552,17 +569,17 @@ mark {
 }
 
 .tip1-container .tip1-item:nth-child(1) {
-  background-image: url("./images/rewe.png");
+  background-image: url("../images/rewe.png");
   background-size: 300px;
 }
 
 .tip1-container .tip1-item:nth-child(2) {
-  background-image: url("./images/aldi.png");
+  background-image: url("../images/aldi.png");
   background-size: 650px;
 }
 
 .tip1-container .tip1-item:nth-child(3) {
-  background-image: url("./images/DM.png");
+  background-image: url("../images/DM.png");
   background-size: 350px;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -660,4 +677,163 @@ mark {
   margin-left: 10rem;
   text-align: center;
   line-height: 2;
+}
+
+/* house.html */
+
+.house-type-section a {
+  margin-top: 2rem;
+}
+
+#step-one .title {
+  margin-bottom: 2rem;
+}
+
+#step-one .house-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+#step-one .type-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* wrap */
+  flex-wrap: wrap;
+  align-content: center;
+
+  /* flex-direction, flex-wrap 줄임 */
+  flex-flow: row wrap;
+  width: 50%;
+}
+
+#step-one .type-icon {
+  border: 1px solid #ddd;
+  flex-basis: 50%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#step-one .type-desc {
+  border: 1px solid #efdc05;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.type-desc div:not(:first-child) {
+  display: none;
+}
+
+
+#step-two .site-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#step-two .site-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* wrap */
+  flex-wrap: wrap;
+  align-content: center;
+
+  /* flex-direction, flex-wrap 줄임 */
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+#step-two .site-item {
+  border: 1px solid #ddd;
+  flex-basis: 40%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.house-site .title {
+  text-align: center;
+}
+
+.site-item:nth-child(1) {
+  background-image: url(../images/wg-gesucht.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: rgba(255, 115, 0, 0.904);
+}
+
+
+.site-item:nth-child(2) {
+  background-image: url(../images/immo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: #fff;
+}
+
+.site-item:nth-child(4) {
+  background-image: url(../images/beri.png);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+
+.site-item:nth-child(3) {
+  background-image: url(../images/ebay.png);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.site-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.house-site .a {
+  margin-top: 0;
+}
+
+/* visa.html */
+.visa .title {
+  text-align: center;
+}
+
+.papers-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.papers-table {
+  width: 50%;
+}
+
+.papers-container table {
+  border: none;
+  box-shadow: none;
+}
+
+.papers-table td {
+  width: 30%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.papers-table tr {
+  height: 130px;
 }

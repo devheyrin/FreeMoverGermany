@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/sub.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="../main.js"></script>
+  <script src="..confetti.min.js"></script>
+  <title>비자 발급</title>
+</head>
+
+<body>
+  <!--   navigation start   -->
+  <nav class="fixed-top" id="navbar">
+    <h1><a href="../index.html"><img src="../images/logo.png" /></a></h1>
+    <ul>
+      <li><a href="../index.html#welcom-section">Welcome</a></li>
+      <li><a href="../index.html#detail-section">Details</a></li>
+      <li><a href="../index.html#universities">Univ</a></li>
+      <li><a href="../index.html#todo-section">TO-DO List</a></li>
+    </ul>
+  </nav>
+  <!--   navigation end   -->
+
+  <section id="step-one" class="visa">
+    <div class="title">비자 신청 | 필요한 서류</div>
+    <div class="papers-container">
+      <table class="papers-table">
+        <tr>
+          <td name="1" class="item">여권, 여권사진</td>
+          <td name="2" class="item">테어민 확인서</td>
+          <td name="3" class="item">비자신청서</td>
+        </tr>
+        <tr>
+          <td name="4" class="item">보험가입신청서</td>
+          <td name="5" class="item">입학허가서</td>
+          <td name="6" class="item">재정증명서</td>
+        </tr>
+        <tr>
+          <td name="7" class="item">비자 결제할 <br>카드</td>
+          <td name="8" class="item">여행증명서</td>
+          <td name="9" class="item">안멜둥 서류</td>
+        </tr>
+      </table>
+
+      <div class="type-desc">
+        <div>
+          왼쪽에서 서류를 클릭해 보세요!
+        </div>
+        <div id="1">
+          여권 사진과 똑같은 사진일 필요는 없어요! <br>
+          시청에 사진을 찍는 기계가 있는 경우도 있다고 해요. 
+        </div>
+
+        <div id="2">
+          시청에서 직접 테어민을 잡았다면 <br> 그때 받은 서류를, <br>
+          이메일/웹사이트를 통해 테어민을 잡았다면 <br>이메일을 프린트해 가면 돼요!
+
+        </div>
+
+        <div id="3">
+          학교 OT 기간에 비자 신청서를 받고 작성해요. <br>이 서류를 보관해두었다가 가져가면 돼요!
+        </div>
+
+        <div id="4">
+          학교 OT 기간에 보험에 가입하면서 받는<br> 서류 중 하나에요. <br>보험사 도장이 찍혀있으면 OK! 
+        </div>
+
+        <div id="5">
+          Immartrikulationsbescheinigung<br>
+          방문학생 지원 과정에서 받은<br> 입학허가서를 가져가면 돼요!
+        </div>
+
+        <div id="6">
+         은행에 가서 통장 잔고 내역을<br> 뽑아달라고 하면 OK!
+        </div>
+
+        <div id="7">
+          현금 결제는 안 되는 경우도 있으니,<br> 카드도 함께 챙겨가는 게 좋아요! 
+        </div>
+
+        <div id="8">
+          임시 비자를 받아야 하는 경우,<br> 해외에 나간다는 증명이 필요해요.<br> 교통편 예매 내역 등을<br>증명 자료로 가져가면 좋아요. 
+        </div>
+
+        <div id="9">
+          거주 등록 확인 서류에요.<br> 독일 행정 절차에서는 가장 기본적인<br> 서류이므로 챙겨가는 것이 좋아요!
+        </div>
+      </div>
+
+      <script>
+        let $items = document.getElementsByClassName('item');
+
+        for (let item of $items) {
+          item.addEventListener('click', function () {
+            console.log(item);
+
+            let $type_desc = document.querySelector('.type-desc').getElementsByTagName('div');
+            for (let div of $type_desc) {
+              div.style.display = 'none';
+            }
+            let selected_name = item.getAttribute('name');
+            console.log(selected_name);
+            let $selected_desc = document.getElementById(selected_name);
+            $selected_desc.style.display = 'flex';
+          });
+        }
+
+      </script>
+    </div>
+    <div class="bnt-container">
+      <a href="./account.html">
+        <div class="btn-holder" class="prev-btn">
+          <button class="btn btn-5 hover-border-11">
+            <span>이전으로</span>
+          </button>
+        </div>
+      </a>
+      <!-- 툴팁 없는 버튼 -->
+      <div class="btn-holder" id="confetti">
+        <button class="btn btn-5 hover-border-11">
+          <span>완료!</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $("#confetti").click(() => {
+          setTimeout(()=>{
+            window.location.href = "tips.html";
+          }, 500);
+        });
+      });
+    </script>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/sub.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="../main.js"></script>
+  <script src="../confetti.min.js"></script>
+  <title>집 구하기</title>
+</head>
+
+<body>
+  <!--   navigation start   -->
+  <nav class="fixed-top" id="navbar">
+    <h1><a href="../index.html"><img src="../images/logo.png" /></a></h1>
+    <ul>
+      <li><a href="../index.html#welcom-section">Welcome</a></li>
+      <li><a href="../index.html#detail-section">Details</a></li>
+      <li><a href="../index.html#universities">Univ</a></li>
+      <li><a href="../index.html#todo-section">TO-DO List</a></li>
+    </ul>
+  </nav>
+  <!--   navigation end   -->
+
+  <!-- step 1  start -->
+  <section id="step-one" class="house-type-section">
+    <div class="title">Step 1. 독일의 집 종류</div>
+    <div class="house-type">
+      <div class="type-icons">
+        <div class="type-icon" name="WG-Zimmer">
+          WG-Zimmer
+        </div>
+        <div class="type-icon" name="1-Zimmer-Wohnung">
+          1-Zimmer-Wohnung
+        </div>
+        <div class="type-icon" name="Wohnung">
+          Wohnung
+        </div>
+        <div class="type-icon" name="Haus">
+          Haus
+        </div>
+      </div>
+
+      <div class="type-desc">
+        <div>
+          왼쪽에서 원하는 방 종류를 클릭해보세요!
+        </div>
+        <div id="WG-Zimmer">
+          WG라 쓰고 '베게'라 읽어요. <br>
+          플랫 셰어, 하우스메이트 개념과 비슷합니다!<br>
+          하나의 집을 빌려 방은 개인이 사용하되<br>
+          주방과 욕실은 공동사용하는 형태예요. <br>
+          같은 WG 중에서도 세입자 또는 임대인에 따라 <br>
+          다양한 성향의 WG가 있어요.
+        </div>
+
+        <div id="1-Zimmer-Wohnung">
+          일반적인 한국식 원룸과 비슷해요. <br>
+          주방 공간이 따로 없고 방 하나에 싱크대와 인덕션,<br>
+          욕실 겸 화장실이 있는 형태.<br>
+          개인 공간이 중요하다면 잘 맞을 거에요!<br>
+          단 방송통신비, 전기세, 인터넷비용 등<br>
+          부가적인 비용을 혼자 부담해야 한다는 점!
+        </div>
+
+        <div id="Wohnung">
+          Wohnung이라 쓰고 '보눙'이라 읽어요.<br>
+          주택 전체를 빌리는 Haus를 제외하고 <br>
+          개인이 빌릴 수 있는 거주용 부동산을 총칭해요. <br>
+          보통 원룸 이상의 방을 가진 매물을 뜻해요.
+        </div>
+
+        <div id="Haus">주택 형식의 매물을 말해요.<br>
+          건물 한 채를 통채로 내놓는 경우가 많아요. <br>
+          보통 가족이 살기 위해 임대를 하거나<br>
+          적당한 WG를 찾지 못한 학생들이 <br>
+          Haus를 임대해 같이 살기도 해요.<br>
+        </div>
+      </div>
+
+      <script>
+        let $type_icon = document.getElementsByClassName('type-icon');
+
+        for (let item of $type_icon) {
+          item.addEventListener('click', function () {
+
+            let $type_desc = document.querySelector('.type-desc').getElementsByTagName('div');
+            for (let div of $type_desc) {
+              div.style.display = 'none';
+            }
+            let selected_name = item.getAttribute('name');
+            let $selected_desc = document.getElementById(selected_name);
+            $selected_desc.style.display = 'flex';
+          });
+        }
+
+      </script>
+    </div>
+    <a href="#step-two">
+      <div class="arrow bounce"></div>
+    </a>
+  </section>
+  <!-- step 1  end -->
+
+  <!-- step 2  start -->
+  <section id="step-two" class="house-site">
+    <div class="title">Step 2. 집 구하는 사이트</div>
+    <div class="site-container">
+      <div class="site-items">
+        <div class="site-item" >
+          <a href="https://www.wg-gesucht.de/"></a>
+        </div>
+        <div class="site-item" >
+          <a href="https://www.immobilienscout24.de/"></a>
+        </div>
+        <div class="site-item" >
+          <a href="http://www.berlinreport.com/"></a>
+        </div>
+        <div class="site-item" >
+          <a href="https://www.immobilienscout24.de/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="bnt-container">
+      <a href="./apply.html">
+        <div class="btn-holder" class="prev-btn">
+          <button class="btn btn-5 hover-border-11">
+            <span>이전으로</span>
+          </button>
+        </div>
+      </a>
+      <!-- 툴팁 없는 버튼 -->
+      <div class="btn-holder" id="confetti">
+        <button class="btn btn-5 hover-border-11">
+          <span>완료!</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $("#confetti").click(() => {
+          setTimeout(()=>{
+            window.location.href = "account.html";
+          }, 500);
+        });
+      });
+    </script>
+  </section>
+  <!-- step 2  end -->
+</body>
+
+</html>

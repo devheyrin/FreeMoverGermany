@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/sub.css" />
+  <!-- 슬라이더 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="../main.js"></script>
+  <script src="../confetti.min.js"></script>
+
+  <title>학교 선택</title>
+</head>
+
+<body>
+  <!--   navigation start   -->
+  <nav class="fixed-top" id="navbar">
+    <h1><a href="../index.html"><img src="../images/logo.png" /></a></h1>
+    <ul>
+      <li><a href="../index.html#welcom-section">Welcome</a></li>
+      <li><a href="../index.html#detail-section">Details</a></li>
+      <li><a href="../index.html#universities">Univ</a></li>
+      <li><a href="../index.html#todo-section">TO-DO List</a></li>
+    </ul>
+  </nav>
+  <!--   navigation end   -->
+
+  <!-- step 1  start -->
+  <section id="step-one">
+    <div class="flex-row">
+      <div>
+        <div class="title">Step 1. 학교 List Up</div>
+        <div class="univ-desc">
+          방문학생으로 가고 싶은 대학교를 찾아봅시다! <br>
+          독일은 대학이 평준화되어있기 때문에, 대학의 순위보다는<br>
+          내가 원하는 학과에 유명한 교수가 있는지, <br> 
+          그 학과에 얼마나 오랜 전통이 있는지가 더 중요하다고 해요! <br>
+          학교가 위치한 지역이 동독인지 서독인지, <br>소도시인지 대도시인지도 함께 고려해보세요! 
+        </div>
+      </div>
+
+      <div class="slider">
+        <div><img src="../images/germany1.jpg" width="500px" height="300px"></div>
+        <div><img src="../images/germany2.jpg" width="500px" height="300px"></div>
+        <div><img src="../images/germany5.jpg" width="500px" height="300px"></div>
+        <div><img src="../images/germany8.jpg" width="500px" height="300px"></div>
+      </div>
+    </div>
+    <a href="#step-two" class="arrow-btn">
+      <div class="arrow bounce"></div>
+    </a>
+  </section>
+  <!-- step 1  end -->
+
+  <!-- step 2  start -->
+  <section id="step-two">
+    <div>
+      <div class="title">Step 2. 방문학생 제도 찾기</div>
+      <div class="flex-row">
+        <div class="desc">
+          이제 각 대학교에 방문학생 제도가 있는지 찾아봅시다! <br>
+          독일에서 방문 학생은 대부분 <br>
+          <mark>Free Mover, Non-Degree Student</mark>로 부르고 있으니, <br>
+          이러한 이름의 제도가 있는지 찾아보세요!<br>
+          Free Mover 제도가 홈페이지에 명시된 학교들은<br> 옆에서 확인해보세요. 
+        </div>
+        <table>
+          <tr>
+            <th colspan="3">클릭하면 학교 홈페이지로 이동해요!</th>
+          </tr>
+          <tr>
+            <td><a href="https://www.rwth-aachen.de/go/id/a/?lidx=1">RWTH Aachen</a></td>
+            <td><a href="https://www.kit.edu/">KIT Karlsruche</a></td>
+            <td><a href="https://www.uni-stuttgart.de/">Uni Stuttegart</a></td>
+          </tr>
+          <tr>
+            <td><a href="www.uni-kl.de">TU Kaiserslautern</a></td>
+            <td><a href="http://tu-dresden.de/en">TU Dresden</a></td>
+            <td><a href="">Uni Heidelberg</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.tu-braunschweig.de/">TU Braunschweig</a></td>
+            <td><a href="https://www.uni-heidelberg.de/en">Uni Magdeburg</a></td>
+            <td><a href="http://www.uni-freiburg.de/">Uni Freiburg</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.ruhr-uni-bochum.de/de">Ruhr Uni Bochum</a></td>
+            <td><a href="www.b-tu.de">Brandenburg Tech Univ</a></td>
+            <td><a href="https://www.uni-hamburg.de/">Uni Hamburg</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.uni-saarland.de/">Uni Saarland</a></td>
+            <td><a href="http://www.uni-frankfurt.de/">Frankfurt University</a></td>
+            <td><a href="https://www.uni-bremen.de/">Uni Bremen</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.uni-due.de/">Uni DuisBurg-Essen</a></td>
+            <td><a href="https://www.uni-ulm.de/">Uni Ulm</a></td>
+            <td><a href="www.uni-oldenburg.de">Uni Oldenburg</a></td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+    <a href="#step-three" class="arrow-btn">
+      <div class="arrow bounce"></div>
+    </a>
+  </section>
+  <!-- step 2  end -->
+
+  <!-- step 3  start -->
+  <section id="step-three">
+
+    <div class="title">Step 3. 메일 보내 확인하기</div>
+
+    <div>Free Mover 제도가 있지만 홈페이지에 정보가 없는 경우도 있어요 <br>
+      그렇다면, 국제교류처에 직접 메일을 보내 문의해보세요! <br>
+      방문학생 제도가 있는지, 있다면 어떻게 지원해야 하는지 자세히 안내해 줄 거에요.
+    </div>
+    <button class="btn btn-1 hover-filled-slide-down btn-email">
+      <span>이메일 예시 보기</span>
+    </button>
+    <div class="email-example">메일 제목: [International Department] Questions about FREE MOVER application<br>
+      받는 주소: 국제교류처 메일 주소 <br/>
+      <hr>
+      Dear international department of 지원하고자 하는 대학 이름<br/>
+      (만약 홈페이지에 NON-EU 학생 유학 관련 담당자가 제시되어 있다면 그쪽 메일 주소로)
+      <br/>
+      Dear Mr/Ms 담당자 이름 <br/>
+
+      Hello, <br/><br/>
+
+      My name is 자신 이름 and I am an undergraduate student currently majoring in 본 전공 이름 at 본교 이름. <br>
+
+      (본교 홈페이지에서 자신 전공 상세페이지[영문] 링크 첨부) <br/>
+
+      I plan to study 지원하고자 하는 전공 at 지원하고자 하는 대학 이름 as a free mover student next 지원하고자 하는 학기​, and I was hoping to seek
+      some information to materialize this plan. However, even though I searched the university website I was unable to
+      get enough guide for application. <br/><br/>
+
+      I wonder if you could provide me with some information regarding students who wish to study at 지원하고자 하는 대학 이름 as a
+      free mover. And I would also like to know if there are some accommodation(기숙사) and finance systems for free mover
+      students too. <br/>
+      Deepest thanks for your consideration. <br/><br/>
+      Sincerely, <br/>
+      이름
+    </div>
+    <!-- 툴팁 없는 버튼 -->
+    <div class="btn-holder" id="confetti">
+      <button class="btn btn-5 hover-border-11">
+        <span>방문교 선택 완료!</span>
+      </button>
+    </div>
+    <script>
+      $(function () {
+        $("#confetti").click(() => {
+          setTimeout(() => {
+            window.location.href = "apply.html";
+          }, 500);
+        });
+      });
+    </script>
+  </section>
+  <!-- step 3 end -->
+</body>
+</html>

@@ -5,11 +5,11 @@
 */
 @font-face {
   font-family: "brice-semibold";
-  src: url(./src/Brice-SemiBold.otf);
+  src: url(../src/Brice-SemiBold.otf);
 }
 @font-face {
   font-family: "brice-le";
-  src: url(./src/Brice-LightExpanded.otf);
+  src: url(../src/Brice-LightExpanded.otf);
 }
 
 @font-face {
@@ -113,7 +113,7 @@ nav {
   justify-content: center;
   /* background-image: url(./images/background.jpg); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/background.jpg);
+    url(../images/background.jpg);
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,7 +168,7 @@ nav {
   align-items: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/background2.jpg);
+    url(../images/background2.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -300,17 +300,17 @@ nav {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(./images/marburg.jpg);
+  background-image: url(../images/marburg.jpg);
 }
 .card:nth-child(2):before {
-  background-image: url(./images/giessen.jpg);
+  background-image: url(../images/giessen.jpg);
 }
 .card:nth-child(3):before {
-  background-image: url(./images/RWTH-Aachen-photo.jpg);
+  background-image: url(../images/RWTH-Aachen-photo.jpg);
   background-position: center;
 }
 .card:nth-child(4):before {
-  background-image: url(./images/stuttgart.jpg);
+  background-image: url(../images/stuttgart.jpg);
 }
 
 .content {

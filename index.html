@@ -28,7 +28,7 @@
     });
   </script>
   <title>Free Mover Germany</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -122,18 +122,18 @@
   <section id="todo-section">
     <div id="todo-title">TO-DO List</div>
     <div id="todo-list">
-      <a href="find-univ.html"><div>방문교 찾기</div></a>
-      <a href="apply.html"><div>지원하기</div></a>
-      <a href="house.html"><div>기숙사/집 구하기</div></a>
-      <a href="account.html"><div>보험 가입/계좌 만들기</div></a>
-      <a href="visa.html"><div>비자 발급받기</div></a>
-      <a href="tips.html"><div>더 많은 꿀팁</div></a>
+      <a href="./pages/find-univ.html"><div>방문교 찾기</div></a>
+      <a href="./pages/apply.html"><div>지원하기</div></a>
+      <a href="./pages/house.html"><div>집 구하기</div></a>
+      <a href="./pages/account.html"><div>계좌 개설</div></a>
+      <a href="./pages/visa.html"><div>비자 발급</div></a>
+      <a href="./pages/tips.html"><div>더 많은 꿀팁</div></a>
     </div>
   </section>
   <!--   project section end   -->
   <!--   contact section start   -->
   <section id="contact">
-    <a href="form.html"><button id="form-btn">틀린 정보 제보하기</button></a>  
+    <a href="./pages/form.html"><button id="form-btn">틀린 정보 제보하기</button></a>  
   </section>
   <!--   contact section end  -->
   <!--   footer section start   -->
@@ -191,6 +191,16 @@
           <li>약 4만 7천명의 학생이 재학 중 </li>
           <li>뮌헨 공대, 베를린 공대와 함께 독일 공과대학 TOP3</li>
           <li><a href="www.rwth-aachen.de/"><mark>👉학교 바로가기</mark></a></li>
+        `;
+      } else if (univ_name == 'stuttegart') {
+        $univ_name.innerHTML = '슈트트가르트 대학교';
+        $univ_logo.src = 'images/uni_aachen_logo.png';
+        $univ_detail.innerHTML =
+          `
+          <li>위치 : 독일 바덴뷔르템베르크주 슈트트가르트</li>
+          <li>약 2만 3천명의 학생이 재학 중 </li>
+          <li>독일 공과대학 연합 TU9, 유럽 공과대학 연합 T.I.M.E에 속해 있다. </li>
+          <li><a href="https://www.uni-stuttgart.de/"><mark>👉학교 바로가기</mark></a></li>
         `;
       }
       $modal.style.display = "flex";
